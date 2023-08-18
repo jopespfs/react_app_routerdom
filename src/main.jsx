@@ -1,10 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
-import 'bootstrap/dist/css/bootstrap.min.css'
 import {createBrowserRouter,RouterProvider,} from "react-router-dom";
 import { Login } from './pages/login.jsx';
 import { ErrorPage } from './pages/ErrorPage.jsx';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import { Usuarios } from './pages/Usuarios.jsx';
+import { Cadastro } from './pages/Cadastro.jsx';
+
 
 const router = createBrowserRouter([
   {
@@ -15,6 +18,14 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <Login/>
+  },
+  {
+    path: "/usuarios",
+    element: <Usuarios/>
+  },
+  {
+    path: "/cadastro",
+    element: <Cadastro/>
   },
 ]);
 
